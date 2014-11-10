@@ -31,7 +31,7 @@ angular.module('app', ['ng-fi-text']);
 ## Usage
 
 ### Requeriments for making it work properly
-_ng-fi-text_ can be initialized in multiles div's inside a page. It only needs to be inside de app's scope.
+_ng-fi-text_ can be initialized in multiple divs inside a page. It only needs to be inside de app's scope.
 
 It is very important to ensure the container div you will apply _ng-fi-text_ have the css position set to **relative** or **absolute**, otherwise the plugin will place the fitting text in weird locations.
 
