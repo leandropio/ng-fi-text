@@ -1,0 +1,44 @@
+{
+  "name": "ng-fi-text",
+  "version": "0.1.0",
+  "authors": [
+    "Leandro Bessone"
+  ],
+  "description": "Makes any text fits any box of any size in your beloved website.",
+  "main": "dist/ng-fi-text.js",
+  "moduleType": [
+    "globals"
+  ],
+  "ignore": [
+    "bower_components",
+    "legacy_versions",
+    "node_modules",
+    "src",
+    ".git",
+    ".bowerrc",
+    ".gitignore",
+    ".jshintignore",
+    ".jshintrc",
+    "bower.json",
+    "gruntfile.js",
+    "package.json",
+    "npm-debug-log",
+    "README.md",
+    "index.html"
+  ],
+  "keywords": [
+    "fi-text",
+    "fit",
+    "text",
+    "adjust",
+    "font",
+    "size",
+    "div",
+    "box",
+    "expand",
+    "cover",
+    "contain"
+  ],
+  "license": "MIT",
+  "homepage": ""
+}
