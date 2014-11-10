@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+	<title>ng-fi-text plugin</title>
+
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+	<style type="text/css">
+
+		p { font-size: 1.2em }
+
+		h2 { margin-top: 50px; }
+
+		h5 { height: 26px; text-align: center; margin-top: 20px;}
+
+		.desc { margin: 50px auto; }
+
+
+		[class^="expl-box"] {
+			position: relative;
+			height: 120px;
+			/*margin: 15px;*/
+			border: 2px solid gray;
+		}
+		.expl-box-fi {
+			border-color: #f60;	
+			height: 200px;
+		}
+
+		.expl-box-nr {
+			height:200px; overflow-y: scroll 
+		}
+
+	</style>
+</head>
+<body>
+
+<a href="https://github.com/leandropio/ng-fi-text"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+
+	<div class="container text-left" ng-app="angularExampleApp">
+		<div class="row text-center">
+			<div class="col-xs-12">
+				<h4 class="desc"><em>ng-fi-text</em> makes any text fits any box of any size in any (angular) website.</h4>
+				<div class="expl-combo">
+					<div class="expl-box-fi" ng-fi-text="{{ expl0 }}"></div>
+					<label>
+						<h5>A text input for the above example:</h5> 
+					</label>
+					<input type="text" ng-model="expl0" ng-init="expl0='ng-fi-text 0.1.0 FTW!!!'">
+				</div>
+			</div>
+		</div>
+
+		<div class="row ">
+			<div class="col-xs-12">
+				<h2>What's <em>ng-fi-text</em> and what it does?</h2>
+				<p>What basically does is to tweak the <code>font-size</code> to the maximum size possible that fits its container (a <code>&lt;div&gt;</code> that has the <code>ng-fi-text</code> attribute added).</p>
+				<p>
+					<em>ng-fi-text</em> is an angular.js directive currently. I have plans to wrap the source into a custom binding for knockout.js, as jQuery plugin and so on.
+				</p>
+				<p>This work is derived from a knockout.js's custom binding I made when coding <a href="https://www.witzum.com" target="_blank">witzum.com</a>.</p>
+
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12">
+				<h2>Does it work with long text?</h2>
+				<p>Yes. Example:</p>
+			</div>
+		</div>
+
+		<div class="row ">
+			<div class="col-xs-12 col-sm-4">
+				<h5>Editable input for the example:</h5>
+				<textarea  style="width:100%" rows="10" ng-model="expl1" ng-init="expl1='No work or love will flourish out of guilt, fear, or hollowness of heart, just as no valid plans for the future can be made by those who have no capacity for living now. - Alan Watts'"></textarea>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<h5>Your good old div</h5>
+				<div class="expl-box-nr" ng-bind="  expl1  "></div>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<h5>The same div with <em>ng-fi-text</em> added</h5>
+				<div class="expl-box-fi"  ng-fi-text=" {{ expl1 }} " ></div>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-xs-12">
+				<h2>What about <em>html</em>? Can be used inside it?</h2>
+				<p>You bet. Example:</p>
+			</div>
+		</div>
+
+		<div class="row ">
+			<div class="col-xs-12 col-sm-4">
+				<h5>Editable input for the example:</h5>
+				<textarea  style="width:100%" rows="10" ng-model="expl2" ng-init="expl2='<blockquote><p>No work or love will flourish out of guilt, fear, or hollowness of heart, just as no valid plans for the future can be made by those who have no capacity for living now</p>
+<footer> <cite>Alan Watts</cite></footer></blockquote>'"></textarea>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<h5>Normal div { overflow-y: scroll }</h5>
+				<div class="expl-box-nr" ng-bind-html=" expl2 "></div>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<h5>Same div with <em>ng-fi-text</em> & <em>ng-fi-text-html</em> added</h5>
+				<div class="expl-box-fi"  ng-fi-text ng-fi-text-html="{{ expl2 }}"></div>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-xs-12">
+				<h2>Dependencies?</h2>
+				
+				<ul>
+					<li><p>Angular.js</p></li>
+					<li><p>jQuery ( planning to eliminate this dependency on next releases )</p></li>
+				</ul>
+				
+			</div>
+		</div>
+
+
+
+		<div class="row">
+			<div class="col-xs-12">
+				<h2>How can I use it?</h2>
+				<p>Go to the Github page, the README you'll find there is like a Owner's Manual, with installation and setup indications.</p>
+				<p>
+				<a href="https://github.com/leandropio/ng-fi-text">https://github.com/leandropio/ng-fi-text</a>
+				</p>
+			</div>
+		</div>
+
+		
+		<div class="row">
+			<div class="col-xs-12">
+				<h2>How much is it?</h2>
+				<p>For you, nothing. <em>ng-fi-text</em> has the MIT license wich gives you permission for doing whatever you want to do with the code for free.</p>
+				<p>
+				<a href="https://github.com/leandropio/ng-fi-text">https://github.com/leandropio/ng-fi-text</a>
+				</p>
+			</div>
+		</div>
+
+
+	</div>
+
+
+
+	
+	
+</body>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+<script src="dist/ng-fi-text.min.js"></script>
+<script>
+	var angularExampleApp = angular.module("angularExampleApp", ['ng-fi-text','ngSanitize']);
+</script>
+
+
+</html>
