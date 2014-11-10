@@ -1,6 +1,6 @@
-# fi-text 0.1.0
+# ng-fi-text 0.1.0
 
-#### Makes any text fits any box of any size in your beloved website.
+### Makes any text fits any box of any size in any ( angular ) website.
 
 
 
