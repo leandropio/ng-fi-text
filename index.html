@@ -12,6 +12,8 @@
 
 	<style type="text/css">
 
+		body { padding-bottom: 25px; }
+
 		p { font-size: 1.2em }
 
 		h2 { margin-top: 50px; }
@@ -77,7 +79,7 @@
 
 		<div class="row ">
 			<div class="col-xs-12 col-sm-4">
-				<h5>Editable input for the example:</h5>
+				<h5>Editable input for the example</h5>
 				<textarea  style="width:100%" rows="10" ng-model="expl1" ng-init="expl1='No work or love will flourish out of guilt, fear, or hollowness of heart, just as no valid plans for the future can be made by those who have no capacity for living now. - Alan Watts'"></textarea>
 			</div>
 			<div class="col-xs-12 col-sm-4">
@@ -100,17 +102,26 @@
 
 		<div class="row ">
 			<div class="col-xs-12 col-sm-4">
-				<h5>Editable input for the example:</h5>
+				<h5>Editable input for the example</h5>
 				<textarea  style="width:100%" rows="10" ng-model="expl2" ng-init="expl2='<blockquote><p>No work or love will flourish out of guilt, fear, or hollowness of heart, just as no valid plans for the future can be made by those who have no capacity for living now</p>
 <footer> <cite>Alan Watts</cite></footer></blockquote>'"></textarea>
 			</div>
 			<div class="col-xs-12 col-sm-4">
-				<h5>Normal div { overflow-y: scroll }</h5>
+				<h5>Normal div ( overflow-y: scroll )</h5>
 				<div class="expl-box-nr" ng-bind-html=" expl2 "></div>
 			</div>
 			<div class="col-xs-12 col-sm-4">
 				<h5>Same div with <em>ng-fi-text</em> & <em>ng-fi-text-html</em> added</h5>
 				<div class="expl-box-fi"  ng-fi-text ng-fi-text-html="{{ expl2 }}"></div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12">
+				<h2>Is it responsive?</h2>
+				<p>Yup. It auto refreshes on window resize event. You can try to resize this window to see it in action.</p>
+				
+				
 			</div>
 		</div>
 
@@ -143,10 +154,8 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<h2>How much is it?</h2>
-				<p>For you, nothing. <em>ng-fi-text</em> has the MIT license wich gives you permission for doing whatever you want to do with the code for free.</p>
-				<p>
-				<a href="https://github.com/leandropio/ng-fi-text">https://github.com/leandropio/ng-fi-text</a>
-				</p>
+				<p>For you, nothing, <em>ng-fi-text</em> has the MIT license which gives you permission for doing whatever you want to do with the code for free.</p>
+				
 			</div>
 		</div>
 
