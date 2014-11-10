@@ -2,11 +2,15 @@
 
 ### Makes any text fits any box of any size in any ( angular ) website.
 
+---------
 
+####[You can see THE DEMO HERE][1]
+
+[1]:http://leandropio.github.io/ng-fi-text/
 
 ## Installation
 
- #### Install by command line with bower
+#### Install by command line with bower
 Go to your project's root directory and type:
  ```bash
  bower install ng-fi-text
@@ -19,7 +23,7 @@ Go to your project's root directory and type:
 #### Adding it to angular
 Load the module in your application by adding it as a dependent module:
 ```javascript
-angular.module('app', ['fi-text']);
+angular.module('app', ['ng-fi-text']);
 ```
 
 
