@@ -10,7 +10,7 @@
 
 ## Installation
 
-Impotant: This plugin requires angular version 1.3 or greater
+Important: This plugin requires angular version 1.3 or greater
 
 #### Install by command line with bower
 Go to your project's root directory and type:
